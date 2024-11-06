@@ -1,0 +1,781 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    background-color: white;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    padding: var(--font-fontsize-text-lg, 20px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--font-fontsize-text-6xl, 40px);
+}
+
+
+
+.site-title {
+    margin: 0;
+    color: #0F0F0F;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: 'Sofia Sans';
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.site-description,
+.site-description-page {
+    color: #0F0F0F;
+    font-family: 'Sofia Sans Condensed';
+    font-weight: 300;
+    font-size: clamp(2.25rem, 4vw, 3rem);
+}
+
+.site-description-page {
+    text-align: left;
+    font-weight: 400;
+    font-size: clamp(4rem, 8vw, 10rem);
+    line-height: 110%;
+}
+
+.skills-wrapper {
+    margin: 20px 0;
+
+}
+
+.skills-section {
+    color: #0F0F0F;
+    font-family: "Sofia Sans";
+    font-size: clamp(2rem, 2vw, 2rem);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.skills-list,
+.about-description {
+    color: #0F0F0F;
+    font-family: "Sofia Sans Condensed";
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(1.75rem, 2vw, 2rem);
+
+}
+
+.project-buttons {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.inner-buttons {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.about-buttons {
+    margin: 20px 0;
+}
+
+.primary-b {
+    width: 100%;
+    height: 50px;
+    padding: 10px var(--font-fontsize-text-xl, 24px);
+    justify-content: space-between;
+    align-items: center;
+
+
+    border-radius: 10px;
+    border-style: none;
+    background: #18A3F0;
+
+
+}
+
+.secondary-b {
+    width: 100%;
+    height: 50px;
+    padding: 10px var(--font-fontsize-text-xl, 24px);
+    justify-content: space-between;
+    align-items: center;
+
+
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid #18A3F0;
+    background: #ffffff;
+
+}
+
+.secondary-b a {
+    color: #18A3F0;
+    font-family: "Sofia Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    font-size: clamp(1.125rem, 1vw, 1.25rem);
+}
+
+.primary-b a {
+    color: var(--cc-sus-portfolio-white-100, #FFF);
+    font-family: "Sofia Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    font-size: clamp(1.125rem, 1vw, 1.25rem);
+
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    flex-direction: row;
+    padding: var(--font-fontsize-text-lg, 20px);
+    align-items: center;
+    gap: var(--font-fontsize-text-6xl, 40px);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--font-fontsize-text-lg, 20px);
+    cursor: pointer;
+
+}
+
+.footer-text {
+    font-family: 'Sofia Sans Condensed';
+    color: #0f0f0f;
+}
+
+.page-title {
+    color: #0F0F0F;
+    font-family: "Sofia Sans";
+    font-size: clamp(2.25rem, 3vw, 3rem);
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* .about-description{
+    font-family: "Sofia Sans Condensed";
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+
+
+} */
+/* DESKTOP */
+/* .main-wrapper{
+    display: flex;
+    width: 1440px;
+    padding-top: var(--font-fontsize-text-6xl, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 90px;
+    flex-shrink: 0;
+}
+
+.headline-container{
+    display: flex;
+    padding: 0px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+} */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+/* Project Thumbnails */
+
+.thumbnail-image {
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.project-wrapper {
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.title-area {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.project-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.project-text {
+    margin-top: 10px;
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.title-card {
+    font-family: 'Sofia Sans';
+    color: #0F0F0F;
+    font-family: "Sofia Sans";
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    /* 35px */
+}
+
+
+.description-card {
+    font-family: "Sofia Sans Condensed";
+    color: #0F0F0F;
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+
+    line-height: 125%;
+    /* 30px */
+
+}
+
+.details-card {
+    color: #454545;
+
+    /* Caption */
+    font-family: "Sofia Sans Condensed";
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    /* 22.4px */
+
+}
+
+/* Project Page */
+.project-title-wrapper {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+
+}
+
+.project-details-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.task-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-image-banner-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.project-image-banner {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+    /* margin: 1rem 0; */
+}
+
+.project-title {
+    color: #0F0F0F;
+    font-family: "Sofia Sans";
+    font-size: clamp(2.5rem, 4vw, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.title-description {
+    color: #0F0F0F;
+    font-family: "Sofia Sans Condensed";
+    font-size: clamp(1.75rem, 3vw, 2rem);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%;
+    /* 30px */
+}
+
+.subheading {
+    color: #808080;
+    /* H4, Bold, Condensed */
+    font-family: "Sofia Sans Condensed";
+    font-size: clamp(1.25rem, 2vw, 1.3rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.task-text {
+
+    /* Body, Regular */
+    font-family: "Sofia Sans";
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    color: #0f0f0f;
+    /* 30px */
+}
+
+.project-page-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.body-main-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.body-title-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project-image {
+    display: flex;
+    flex-flow: column nowrap;
+    place-self: center;
+
+}
+
+.title-body {
+    color: #0f0f0f;
+    font-family: "Sofia Sans Condensed";
+    font-size: clamp(2rem, 4vw, 2.25rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.subheading-body {
+    color: #808080;
+    font-family: "Sofia Sans";
+    font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.body-text {
+    font-family: "Sofia Sans";
+    /* font-size: clamp(1.15rem, 1.5vw, 1.75rem); */
+    font-size: clamp(1.15rem, 1vw, 1.5rem);
+
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    color: #0f0f0f;
+}
+
+.name-title {
+    font-family: "Sofia Sans";
+    font-size: clamp(1.5rem, 1.5vw, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #0f0f0f;
+}
+
+.name-title-2 {
+    font-family: "Sofia Sans";
+    font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #0f0f0f;
+}
+
+.group{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+
+
+/* COCOTRADE USER PERSONA */
+
+.cocotrade-users {
+    display: flex;
+    flex-flow: column nowrap;
+    place-self: center;
+    gap: 1rem;
+}
+
+.user-body-text {
+    font-family: "Sofia Sans";
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    color: #0f0f0f;
+}
+
+.cocotrade-user-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    background-color: #F1F7F8;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+.cocotrade-user-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    background-color: #F1F7F8;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.two-images {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+
+/* Hide nav-links on small screens */
+.nav-menu {
+    display: none;
+}
+
+
+
+/* Hamburger button styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #0F0F0F;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-menu a {
+    background-color: none;
+    text-decoration: none;
+    color: #0F0F0F;
+
+    font-family: "Sofia Sans Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+
+}
+
+/* Show hamburger menu on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        border: 1px solid #18A3F0;
+        border-radius: 5px;
+        width: 150px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(166, 182, 194, 0.2);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-wrapper {
+        margin: 20px 0;
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .project-buttons {
+        flex-direction: row;
+    }
+
+    .about-wrapper {
+        max-width: 800px;
+
+    }
+
+    .about-buttons,
+    .inner-buttons {
+        width: 30%;
+    }
+
+    .inner-buttons {
+        margin-top: 2rem;
+        place-self: center;
+    }
+
+    .project-wrapper {
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        width: 100%; */
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .project {
+        flex-basis: 48%;
+        flex-grow: 1;
+    }
+
+    .thumbnail-image {
+        height: 500px;
+    }
+
+    /* Project Page */
+
+
+    .project-details-1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+
+    }
+
+    .project-details-2 {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 4rem;
+
+    }
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-wrapper,
+    .footer-wrapper {
+        max-width: 1200px;
+        margin: 40px auto;
+
+
+    }
+
+
+    .content-wrapper {
+        margin: 40px 0;
+    }
+
+
+    .project-buttons {
+        flex-direction: row;
+        width: 40%;
+
+    }
+
+    .primary-b {
+        height: 50px;
+    }
+
+    .project {
+        flex-basis: 48.5%;
+    }
+
+    .project-title-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    .project-image-banner {
+        height: 500px;
+    }
+
+    .project-page-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        gap: 5rem;
+
+    }
+
+
+    .body-main-wrapper {
+        /* width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+        place-self: center; */
+
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 3rem;
+        width: 65%;
+        place-self: center;
+
+    }
+
+    .project-image {
+        width: 80%;
+    }
+
+    .project-image-2 {
+        width: 100%;
+    }
+
+    .cocotrade-users {
+        /* display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+        width: 80%; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .two-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-self: center;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .site-description-page {
+        text-align: center;
+
+    }
+
+
+
+}
